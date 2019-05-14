@@ -71,7 +71,7 @@ func GetCollectionHandler() {
 		log.Fatal("Error reading request. ", err)
 	}
 
-//	req.Header.Set("Authorization", "Bearer 8bf0df96-809b-41f7-8b04-4066fb889961")
+	req.Header.Set("Authorization", "Bearer <token>")
 
 	client := &http.Client{Timeout: time.Second * 10}
 
